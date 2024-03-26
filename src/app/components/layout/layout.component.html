@@ -1,0 +1,39 @@
+<mat-sidenav-container>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div class="w-7 pl-3">
+        <img width="70px" src="./assets/ESCUDO-GLOBAL.png" alt="">
+      </div>
+      <div class="flex flex-row w-5 justify-content-between pr-3">
+        <a mat-list-item routerLink="wallazulu" routerLinkActive="active"
+        class="router-a">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">WALLA ZULU</p>
+          </div>
+        </a>
+        <a mat-list-item routerLink="geitsu" routerLinkActive="active"
+        class="router-a">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">GEITSU</p>
+          </div>
+        </a>
+        <a mat-list-item routerLink="wallaosint" routerLinkActive="active"
+        class="router-a">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">WALLAOSINT</p>
+          </div>
+        </a>
+        <a mat-list-item routerLink="contact" routerLinkActive="active"
+        class="router-a">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">CONTACTANOS</p>
+          </div>
+        </a>
+      </div>
+
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <footer>hola</footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

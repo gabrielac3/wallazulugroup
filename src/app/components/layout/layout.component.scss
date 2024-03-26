@@ -1,0 +1,38 @@
+mat-toolbar {
+  background-color: #1C2A45;
+  height: 15vh;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 3%), 0 1px 6px -1px rgb(0 0 0 / 2%), 0 2px 4px 0 rgb(0 0 0 / 2%);
+}
+
+mat-sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav-content {
+  background-color: #F0F2F5;
+}
+
+.active {
+  background-color: #4a4617;
+}
+
+.router-name {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.router-a{
+  padding-top: 7px;
+  margin-bottom: -16px;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer{
+  background-color: #1C2A45;
+  height: 30vh;
+}
+
+
