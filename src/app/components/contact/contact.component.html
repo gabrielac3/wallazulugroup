@@ -1,1 +1,141 @@
-<p>contact works!</p>
+<div>
+  <mat-card class="m-4">
+    <mat-card-header class="flex flex-column  mt-3" style="text-align: center;">
+      <h1 style="font-size: 36px; font-weight: 500;">Contáctanos</h1>
+      <h2>
+        <span>Comunícate con nosotros y nos pondremos en contacto contigo tan pronto como nos sea posible.
+        </span>
+        <br>
+        <span>
+          <strong>
+            ¡Esperamos tener noticias tuyas!
+          </strong>
+        </span>
+      </h2>
+    </mat-card-header>
+
+    <mat-card-content class="mt-4">
+      <div class="flex align-items-center">
+        <div class="flex-column w-6 m-4">
+          <div class="flex align-items-center">
+            <mat-icon class="p-4" style="color:#E19621;transform: scale(1.8); font-weight: 500">house</mat-icon>
+            <div class="ml-3">
+              <div style="font-size: 20px;" class="mb-2"><strong> Ubícanos:</strong></div>
+              <span style="font-size: 17px;">Avenida Armando Cambana Nro. 228 2do Piso – Urb. Los Laureles –
+                Chorrillos</span>
+            </div>
+          </div>
+          <div class="flex align-items-center mt-4">
+            <mat-icon class="p-4" style="color:#E19621;transform: scale(1.8); font-weight: 500">email</mat-icon>
+            <div class="ml-3">
+              <div style="font-size: 20px;" class="mb-2"><strong>Email:</strong></div>
+              <span style="font-size: 17px;">info@wallazulugroup.com</span>
+            </div>
+          </div>
+          <div class="flex align-items-center my-4">
+            <mat-icon class="p-4" style="color:#E19621;transform: scale(1.8); font-weight: 500">phone</mat-icon>
+            <div class="ml-3">
+              <div style="font-size: 20px;" class="mb-2"><strong> Telefono:</strong></div>
+              <span style="font-size: 17px;">+51 999 999 999</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-6 m-4">
+          <form [formGroup]="contactForm" (ngSubmit)="submitContact(contactForm)">
+            <div class="grid">
+
+              <mat-form-field appearance="outline" class="col-6">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="Nombre" formControlName="name">
+                <mat-error *ngIf="contactForm.controls['name'].hasError('required')">
+                  Debe ingresar su nombre</mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="col-6">
+                <mat-label>Apellidos</mat-label>
+                <input matInput placeholder="Apellidos" formControlName="lastname">
+                <mat-error *ngIf="contactForm.controls['lastname'].hasError('required')">
+                  Debe ingresar su apellido</mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="col-6">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput placeholder="Correo" formControlName="email">
+                <mat-error *ngIf="contactForm.controls['email'].hasError('required')">
+                  Debe ingresar un correo</mat-error>
+                <mat-error *ngIf="contactForm.controls['email'].hasError('pattern')">
+                  Debe ingresar un correo válido</mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="col-6">
+                <mat-label>Celular</mat-label>
+                <input matInput placeholder="Celular" formControlName="phone" type="number">
+                <mat-error *ngIf="contactForm.controls['phone'].hasError('required')">
+                  Debe ingresar un número de celular</mat-error>
+                <mat-error *ngIf="contactForm.controls['phone'].hasError('pattern')">
+                  Debe ingresar solo números</mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="col-6">
+                <mat-label>Codofin</mat-label>
+                <input matInput placeholder="Codofin" formControlName="codofin">
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="col-6">
+                <mat-label>Dirección</mat-label>
+                <input matInput placeholder="Dirección" formControlName="address">
+              </mat-form-field>
+
+              <mat-form-field appearance="outline" class="col-12">
+                <mat-label>Mensaje</mat-label>
+                <textarea matInput placeholder="Mensaje" formControlName="message"></textarea>
+                <mat-error *ngIf="contactForm.controls['message'].hasError('required')">
+                  Debe ingresar un mensaje</mat-error>
+              </mat-form-field>
+
+            </div>
+
+            <div class="mt-3 flex">
+              <button mat-raised-button type="submit"
+                style="border-radius: 5px; background-color:#E19621; color:#ffffff; width: 100%;">
+                <mat-icon>send</mat-icon>
+                ENVIAR
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="flex justify-content-center mt-4">
+
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="1200" height="560" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=2do+Piso+Armando+Cambana+228%2C+Chorrillos+15064&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://textcaseconvert.com/"></a><br><a href="https://online-timer.me/"></a><br>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 560px;
+                width: 1200px;
+              }
+            </style><a href="https://www.embedmaps.co">adding google map to website</a>
+            <style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 560px;
+                width: 1200px;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+
+  </mat-card>
+
+</div>
