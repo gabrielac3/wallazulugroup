@@ -14,4 +14,10 @@ mat-card{
   text-align: center;
   font-size: 17px;
   font-weight: 700;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card4:hover {
+  background-color: #E0E2DB;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
