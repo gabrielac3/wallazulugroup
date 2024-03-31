@@ -3,21 +3,32 @@
   <mat-sidenav-content>
     <mat-toolbar>
       <div class="w-5 pl-3">
-        <img width="70px" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/ESCUDO-GLOBAL.png"
+        <div [style.background-color]="currentImage.includes('ESCUDO-GLOBAL') ? 'transparent' : '#ffffff61'" [style.width]="currentImage.includes('ESCUDO-GLOBAL') ? 'auto' : 'fit-content'" >
+        <img [style.width.px]="currentImage.includes('ESCUDO-GLOBAL') ? 70 : 160" [src]="currentImage"
           alt="">
+        </div>
       </div>
       <div class="flex flex-row w-7 justify-content-between pr-3">
-        <a mat-list-item routerLink="wallazulu" routerLinkActive="active" class="router-a">
+        <a mat-list-item routerLink="wallazulu" 
+        routerLinkActive="active" 
+        class="router-a"
+        (click)="changeImage(currentImageWallazullu)">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">WALLA INTERNATIONAL</p>
           </div>
         </a>
-        <a mat-list-item routerLink="geitsu" routerLinkActive="active" class="router-a">
+        <a mat-list-item routerLink="geitsu" 
+        routerLinkActive="active" 
+        class="router-a" 
+        (click)="changeImage(currentImageGeitsu)">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">GEITSU</p>
           </div>
         </a>
-        <a mat-list-item routerLink="wallaosint" routerLinkActive="active" class="router-a">
+        <a mat-list-item routerLink="wallaosint" 
+        routerLinkActive="active" 
+        class="router-a"
+        (click)="changeImage('https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLAOSINT.png')">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">WALLAOSINT</p>
           </div>
