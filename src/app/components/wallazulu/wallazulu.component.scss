@@ -21,3 +21,77 @@ mat-card{
   background-color: #E0E2DB;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.card3{
+  width: 24%;
+  margin: 5px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  transition: transform 1s;
+}
+
+
+.card3:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+}
+
+.front {
+  display: block;
+}
+
+.back {
+  display: none;
+  transform: rotateY(180deg);
+}
+
+.card3:hover .front {
+  display: none;
+}
+
+.card3:hover .back {
+  display: block;
+}
+
+/* mat-card .circleflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-card .circle-container {
+  position: relative;
+}
+
+mat-card .circle-item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #1C2A45;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+} */
+
+
+mat-card .circle-item:nth-child(1) { transform: rotate(0deg) translate(300px) rotate(0deg); }
+mat-card .circle-item:nth-child(2) { transform: rotate(45deg) translate(300px) rotate(-45deg); }
+mat-card .circle-item:nth-child(3) { transform: rotate(90deg) translate(300px) rotate(-90deg); }
+mat-card .circle-item:nth-child(4) { transform: rotate(135deg) translate(300px) rotate(-135deg); }
+mat-card .circle-item:nth-child(5) { transform: rotate(180deg) translate(300px) rotate(-180deg); }
+mat-card .circle-item:nth-child(6) { transform: rotate(225deg) translate(300px) rotate(-225deg); }
+mat-card .circle-item:nth-child(7) { transform: rotate(270deg) translate(300px) rotate(-270deg); }
+mat-card .circle-item:nth-child(8) { transform: rotate(315deg) translate(300px) rotate(-315deg); }
