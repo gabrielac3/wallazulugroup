@@ -5,6 +5,7 @@ import { WallazuluComponent } from './components/wallazulu/wallazulu.component';
 import { WallaosintComponent } from './components/wallaosint/wallaosint.component';
 import { GeitsuComponent } from './components/geitsu/geitsu.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallazulu.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: 'wallazulu', component: WallazuluComponent },
+      { path: 'nosotros-wallazulu', component: NosotrosWallazuluComponent},
       { path: 'wallaosint', component: WallaosintComponent },
       { path: 'geitsu', component: GeitsuComponent },
       { path: 'contact', component: ContactComponent},

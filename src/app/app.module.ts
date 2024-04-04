@@ -11,6 +11,8 @@ import { GeitsuComponent } from './components/geitsu/geitsu.component';
 import { WallaosintComponent } from './components/wallaosint/wallaosint.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallazulu.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     WallazuluComponent,
     GeitsuComponent,
     WallaosintComponent,
-    ContactComponent
+    ContactComponent,
+    NosotrosWallazuluComponent
   ],
   imports: [
     BrowserModule,
