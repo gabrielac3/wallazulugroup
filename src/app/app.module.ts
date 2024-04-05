@@ -12,6 +12,9 @@ import { WallaosintComponent } from './components/wallaosint/wallaosint.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallazulu.component';
+import { ConsultaDatosComponent } from './components/consulta-datos/consulta-datos.component';
+import { DatosNacionalesComponent } from './components/consulta-datos/datos-nacionales/datos-nacionales.component';
+import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otros-datos.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallaz
     GeitsuComponent,
     WallaosintComponent,
     ContactComponent,
-    NosotrosWallazuluComponent
+    NosotrosWallazuluComponent,
+    ConsultaDatosComponent,
+    DatosNacionalesComponent,
+    OtrosDatosComponent
   ],
   imports: [
     BrowserModule,

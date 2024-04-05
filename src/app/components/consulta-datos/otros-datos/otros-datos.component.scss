@@ -1,0 +1,92 @@
+mat-card{
+  border-radius: 10px;
+}
+
+.card4{
+  width: 30%;
+  margin: 5px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #E0E2DB;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card4:hover {
+  background-color: #1C2A45;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn{
+  height: 70px;
+  border-radius: 10px;
+  font-size: 17px;
+
+}
+
+.btnPersonales{
+  background-color: #397367 !important;
+  color: #ffffff !important;
+}
+
+.btnVehiculares{
+  background-color: #817E9F !important;
+  color: #ffffff !important;
+}
+
+.btnTelefonica{
+  background-color: #7678ED !important;
+  color: #ffffff !important;
+}
+
+.btnEducativo{
+  background-color: #854D27 !important;
+  color: #ffffff !important;
+}
+
+.btnSalud{
+  background-color: #3C5233 !important;
+  color: #ffffff !important;
+}
+
+.btnEmpresa{
+  background-color: #3581B8 !important;
+  color: #ffffff !important;
+}
+
+.btnPropiedades{
+  background-color: #AF3800 !important;
+  color: #ffffff !important;
+}
+
+.btnBusquedas{
+  background-color: #9E7B9B !important;
+  color: #ffffff !important;
+}
+
+.btnPolicia{
+  background-color: #582707 !important;
+  color: #ffffff !important;
+}
+
+.btnPensiones{
+  background-color: #087E8B !important;
+  color: #ffffff !important;
+}
+
+.btnMigraciones{
+  background-color: #574F2A !important;
+  color: #ffffff !important;
+}
+
+.btnPolitica{
+  background-color: #69140E !important;
+  color: #ffffff !important;
+}

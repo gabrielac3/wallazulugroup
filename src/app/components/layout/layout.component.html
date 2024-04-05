@@ -118,11 +118,19 @@
           </div>
         </a>
 
+        <a mat-list-item routerLink="geitsu"
+        routerLinkActive="active"
+        class="router-a" >
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">GEITSU</p>
+          </div>
+        </a>
+
         <a mat-list-item
         routerLinkActive="active" [matMenuTriggerFor]="menu"
         class="router-a" >
           <div style="display: inline-flex; align-items: center; cursor: pointer">
-            <p class="router-name">SERVICIOS</p>
+            <p class="router-name">WALLAOSINT</p>
             <mat-icon
             style="color: #ffffff; transform: scale(1.5); margin-bottom: 12px; margin-left: 7px;">
               arrow_drop_down
@@ -131,10 +139,10 @@
         </a>
 
           <mat-menu #menu="matMenu" xPosition="after">
-            <button mat-menu-item style="width: 200px;" routerLink="geitsu">
-              <span>GEITSU </span>
+            <button mat-menu-item style="width: 200px;" routerLink="wallaosint">
+              <span>Sobre WALLAOSINT </span>
             </button>
-            <button mat-menu-item routerLink="wallaosint">WALLAOSINT</button>
+            <button mat-menu-item routerLink="consulta-datos">Consulta de Datos</button>
           </mat-menu>
 
         <a mat-list-item routerLink="contact" routerLinkActive="active" class="router-a">

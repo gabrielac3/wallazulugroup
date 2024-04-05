@@ -1,0 +1,300 @@
+<div>
+
+  <h1 class="mt-4 p-4" style="color:#1C2A45; font-size: 48px; text-align: center; font-weight: 700;">
+    Consulta de Otros Datos
+  </h1>
+
+  <mat-card class="m-4">
+    <div class="flex flex-column">
+      <div class="flex justify-content-around mx-4 mt-4 mb-2">
+        <mat-card class="card4" (click)="scrollToSection('sociopolitica')">
+          Sociopolítica geográfica
+        </mat-card>
+        <mat-card class="card4" (click)="scrollToSection('analisis-global')">
+          Análisis Global
+        </mat-card>
+        <mat-card class="card4" (click)="scrollToSection('restringida')">
+          Consulta Restringida - Acceso con usuario / pago
+        </mat-card>
+      </div>
+      <div class="flex justify-content-around mx-4 mt-2 mb-4">
+        <mat-card class="card4" (click)="scrollToSection('extranjera')">
+          Consultas Extranjeras
+        </mat-card>
+        <mat-card class="card4" (click)="scrollToSection('generales')">
+          Consultas generales
+        </mat-card>
+        <mat-card class="card4" (click)="scrollToSection('gobierno')">
+          Gobierno del Perú
+        </mat-card>
+      </div>
+    </div>
+  </mat-card>
+
+<div id="sociopolitica">
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
+    <mat-card-header>
+      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA SOCIOPOLÍTICA GEOGRÁFICA</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.inei.gob.pe/sistemas-consulta/#url', '_blank')">
+      INEI
+      </button>
+      <button mat-flat-button class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.transparencia.gob.pe/', '_blank')">
+      Portal de Transparencia
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.datosabiertos.gob.pe/?query=&sort_by=changed&sort_order=DESC&page=0%2C0', '_blank')">
+      Datos Abiertos
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://visor.geoperu.gob.pe/?ubicacion=provincia-satipo-1206&base=2&lat=-11.497654389200235&lng=-74.12956314290362&zoom=9.3&layers=579,580,5', '_blank')">
+      GEO DATA
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.senamhi.gob.pe/?p=pronostico-meteorologico', '_blank')">
+      SENAMHI
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('http://www.guiacalles.com/movil/indexfin.asp', '_blank')">
+      GUIA - CALLES
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://ultimosismo.igp.gob.pe/', '_blank')">
+      IGP
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.facilito.gob.pe/facilito/pages/facilito/menuPrecios.jsp', '_blank')">
+      OSINERGMIN
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('http://sige.inei.gob.pe/test/atlas/', '_blank')">
+      INEI - Centros poblados, pagos
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.geoidep.gob.pe/servicios-idep/visores-de-mapas', '_blank')">
+      GEOCATMIN
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://www.bcrp.gob.pe/', '_blank')">
+      BCRP
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      onclick="window.open('https://infogob.jne.gob.pe/Localidad/Peru_procesos-electorales_uHzVUEHmgS0%3dzE', '_blank')">
+      INFOGOB
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div id="analisis-global">
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
+    <mat-card-header>
+      <mat-card-title class="mb-2" style="font-size: 24px; font-weight: 600 ;">CONSULTAS AVANZADAS DE FUENTES ABIERTAS GLOBALES</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnVehiculares"
+      onclick="window.open('https://radio.garden/visit/fano/IhpmNnzV', '_blank')">
+      Radio - Satelital
+      </button>
+      <button mat-flat-button class="col-3 m-3  btn btnVehiculares"
+      onclick="window.open('https://www.flightradar24.com/-16.07,-72.31/6', '_blank')">
+      Monitoreo - Vuelos
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      onclick="window.open('https://threatmap.bitdefender.com/', '_blank')">
+      Análisis - Cibernético
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      onclick="window.open('hhttps://cybermap.kaspersky.com/', '_blank')">
+      Ataque - Cibernético
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      onclick="window.open('https://www.shodan.io/', '_blank')">
+      Acceso - Shodan
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      onclick="window.open('https://osintframework.com/', '_blank')">
+      Acceso - Osint
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      onclick="window.open('https://www.marinetraffic.com/en/ais/home/centerx:-66.4/centery:-0.2/zoom:2', '_blank')">
+      Monitoreo - Marine traffic
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div id="restringida">
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
+    <mat-card-header>
+      <mat-card-title class="mb-2" style="font-size: 24px; font-weight: 600 ;">CONSULTA RESTRINGIDA - ACCESO CON USUARIO / PAGO</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://www.empleosperu.gob.pe/portal-mtpe/#/login', '_blank')">
+      Certificado único laboral
+      </button>
+      <button mat-flat-button class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://apps.reniec.gob.pe/certins/validatos.do', '_blank')">
+      Certificado C4 - Reniec
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://apps.reniec.gob.pe/actascertificadas', '_blank')">
+      Partida de nacimiento / Acta de matrimonio - Reniec
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://cape.pj.gob.pe/cape/pages/terminos-uso.xhtml', '_blank')">
+      Certificado de antecedentes penales
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://apps.inpe.gob.pe/certificado_aj_electronico/registroCE.html', '_blank')">
+      Certificado de antecedentes judiciales
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://www.policia.gob.pe/home/CerapOnLine', '_blank')">
+      Certificado de antecedentes policiales
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://sistemaspnp.com/index.php', '_blank')">
+      Sistema intranet de PNP
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      onclick="window.open('https://pagalo.pe/', '_blank')">
+      Págalo PE
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+  <div id="extranjera">
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
+    <mat-card-header>
+      <mat-card-title class="mb-2" style="font-size: 24px; font-weight: 600 ;">CONSULTA DATOS PERSONALES EXTRAJERA</mat-card-title>
+      <mat-card-subtitle
+      style="text-align: center; font-size: 24px;"
+      class="m-3">DATOS GENERALES</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://www.consultasosint.com/osint/', '_blank')">
+      Consulta datos / Ecuador
+      </button>
+      <button mat-flat-button class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://registronacional.com/bolivia/personas.htm', '_blank')">
+      Consulta datos / Bolivia
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://www.buscador-personas.com/argentina-buscar-personas.html', '_blank')">
+      Consulta datos / Argentina
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://personasbuscar.com/colombia/buscar-personas-colombia.htm', '_blank')">
+      Consulta datos / Colombia
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://registronacional.com/venezuela/cedula-de-identidad.htm#menu', '_blank')">
+      Consulta datos / Venezuela
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://registronacional.com/chile/buscador-de-personas-de-chile-en-google.htm', '_blank')">
+      Consulta datos / Chile
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://registronacional.com/brasil/personas.htm', '_blank')">
+      Consulta datos / Brasil
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnPolitica"
+      onclick="window.open('https://registronacional.com/espana/personas.htm', '_blank')">
+      Consulta datos / España
+      </button>
+    </mat-card-content>
+
+    <mat-card-header>
+      <mat-card-subtitle style="text-align: center; font-size: 24px;"
+      class="m-3">CONSULTA DE IDENTIDAD</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://servicios.registrocivil.gob.ec/esiddconsulweb/', '_blank')">
+      Consulta Ecuador
+      </button>
+      <button mat-flat-button class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://servicios.registrocivil.gob.ec/esiddconsulweb/', '_blank')">
+      Consulta Venezuela
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://wsp.registraduria.gov.co/certificado/Datos.aspx?AspxAutoDetectCookieSupport=1', '_blank')">
+      Consulta Colombia
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://www.mininterior.gov.ar/consultaNuevoDNI/pop-up3.php', '_blank')">
+      Consulta Argentina
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://www.nombrerutyfirma.com/', '_blank')">
+      Consulta Chile
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://consultaciudadana.segip.gob.bo/consulta/ciud', '_blank')">
+      Consulta Bolivia
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      onclick="window.open('https://validardni.es/', '_blank')">
+      Consulta España
+      </button>
+    </mat-card-content>
+
+  </mat-card>
+</div>
+
+<div id="generales">
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
+    <mat-card-header>
+      <mat-card-title class="mb-2" style="font-size: 24px; font-weight: 600 ;">LISTA DE CONSULTAS</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnSalud"
+      onclick="window.open('https://eldni.com/pe/buscar-por-nombres', '_blank')">
+      Consulta DNI con nombres y apellidos
+      </button>
+      <button mat-flat-button class="col-3 m-3 btn btnSalud"
+      onclick="window.open('https://licencias.mtc.gob.pe/#/index', '_blank')">
+      Consulta avanzada de licencia de conducir
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnSalud"
+      onclick="window.open('https://www.sucamec.gob.pe/sel/faces/pub/VerificadorWeb.xhtml', '_blank')">
+      Consulta validación de datos - Sucamec
+      </button>
+      <button mat-flat-button  class="col-3 m-3 btn btnSalud"
+      onclick="window.open('https://consultaelectoral.onpe.gob.pe/', '_blank')">
+      Consulta miembro de mesa y lugar de votación
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div id="gobierno">
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
+    <mat-card-header>
+      <mat-card-title class="mb-2" style="font-size: 24px; font-weight: 600 ;">GOBIERNO DEL PERÚ</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-3 m-3 btn btnEmpresa"
+      onclick="window.open('https://www.gob.pe/', '_blank')">
+      Gobierno del Perú
+      </button>
+
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+</div>
+
+
+
+

@@ -21,3 +21,46 @@ mat-card{
   background-color: #E0E2DB;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.card3{
+  width: 24%;
+  margin: 5px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  transition: transform 1s;
+}
+
+
+.card3:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+}
+
+.front {
+  display: block;
+}
+
+.back {
+  display: none;
+  background-color: #1C2A45;
+  transform: rotateY(180deg);
+}
+
+.card3:hover .front {
+  display: none;
+}
+
+.card3:hover .back {
+  display: block;
+}
+

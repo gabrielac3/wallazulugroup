@@ -6,6 +6,9 @@ import { WallaosintComponent } from './components/wallaosint/wallaosint.componen
 import { GeitsuComponent } from './components/geitsu/geitsu.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallazulu.component';
+import { ConsultaDatosComponent } from './components/consulta-datos/consulta-datos.component';
+import { DatosNacionalesComponent } from './components/consulta-datos/datos-nacionales/datos-nacionales.component';
+import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otros-datos.component';
 
 const routes: Routes = [
   {
@@ -20,6 +23,9 @@ const routes: Routes = [
       { path: 'wallazulu', component: WallazuluComponent },
       { path: 'nosotros-wallazulu', component: NosotrosWallazuluComponent},
       { path: 'wallaosint', component: WallaosintComponent },
+      { path: 'consulta-datos', component: ConsultaDatosComponent },
+      { path: 'consulta-datos/nacionales', component: DatosNacionalesComponent },
+      { path: 'consulta-datos/otros', component: OtrosDatosComponent },
       { path: 'geitsu', component: GeitsuComponent },
       { path: 'contact', component: ContactComponent},
     ],

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class WallaosintComponent {
 
+
+  flipCard(event: MouseEvent): void {
+    const card = event.currentTarget as HTMLElement;
+    card.classList.toggle('flipped');
+  }
+
 }
