@@ -1,12 +1,12 @@
 <div>
 
-  <h1 class="mt-4 p-4" style="color:#1C2A45; font-size: 48px; text-align: center; font-weight: 700;">
+  <h1 class="mt-4 md:p-4 text-2xl md:text-6xl font-semibold text-center" style="color:#1C2A45;">
     Consulta de Datos Nacionales
   </h1>
 
   <mat-card class="m-4">
     <div class="flex flex-column">
-      <div class="flex justify-content-around mx-4 mt-4 mb-2">
+      <div class="flex flex-column md:flex-row justify-content-around mx-4 mt-4 mb-2">
         <mat-card class="card4" (click)="scrollToSection('datos-personales')">
           Datos Personales
         </mat-card>
@@ -20,7 +20,7 @@
           Nivel Educativo
         </mat-card>
       </div>
-      <div class="flex justify-content-around mx-4 my-2">
+      <div class="flex flex-column md:flex-row justify-content-around mx-4 my-2">
         <mat-card class="card4" (click)="scrollToSection('seguros-salud')">
           Seguros de Salud
         </mat-card>
@@ -34,7 +34,7 @@
           Sistemas de Búsquedas
         </mat-card>
       </div>
-      <div class="flex justify-content-around mx-4 mt-2 mb-4">
+      <div class="flex flex-column md:flex-row justify-content-around mx-4 mt-2 mb-4">
         <mat-card class="card4" (click)="scrollToSection('policia-nacional')">
           Plataforma de la Policía Nacional
         </mat-card>
@@ -55,30 +55,30 @@
 <div id="datos-personales">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DATOS PERSONALES</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DATOS PERSONALES</mat-card-title>
     </mat-card-header>
-    <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnPersonales"
+    <mat-card-content class="md:px-5 flex md:justify-content-around grid" style="width: 100%;">
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPersonales"
       onclick="window.open('https://eldni.com/pe/buscar-por-nombres', '_blank')">
         Obtener DNI, nombre y apellido
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnPersonales"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPersonales"
       onclick="window.open('https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/FrameCriterioBusquedaWeb.jsp', '_blank')">
         Consulta Ruc - Sunat
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPersonales"
       onclick="window.open('https://carnetvacunacion.minsa.gob.pe/#/auth', '_blank')">
         Consulta carnet - vacunación
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPersonales"
       onclick="window.open('https://multas.jne.gob.pe/login', '_blank')">
         Consulta multas electorales
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPersonales"
       onclick="window.open('https://operaciones.sisfoh.gob.pe:450/cse/', '_blank')">
         Consulta sistema de focalización de hogares - SISFOH
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPersonales"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPersonales"
       onclick="window.open('https://serviciosbiometricos.reniec.gob.pe/appConsultaHuellas/index.htm', '_blank')">
       Consulta mejores huellas - Reniec (roto)
       </button>
@@ -89,30 +89,30 @@
 <div id="consultas-vehiculares">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTAS VEHICULARES</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTAS VEHICULARES</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnVehiculares"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnVehiculares"
       onclick="window.open('https://www.sunarp.gob.pe/seccion/servicios/detalles/0/c3.html', '_blank')">
         Consulta dato vehicular - Sunarp
       </button>
-      <button mat-flat-button class="col-3 m-3  btn btnVehiculares"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3  btn btnVehiculares"
       onclick="window.open('https://portal.mtc.gob.pe/reportedgtt/form/frmconsultaplacaitv.aspx', '_blank')">
       Consulta revisión técnica vehicular
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnVehiculares"
       onclick="window.open('https://slcp.mtc.gob.pe/', '_blank')">
       Consulta licencia de conducir
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnVehiculares"
       onclick="window.open('https://www.sat.gob.pe/WebSiteV9/Inicio/aid/341', '_blank')">
       Consulta multas de transito
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnVehiculares"
       onclick="window.open('https://www.interseguro.pe/soat/consulta-soat', '_blank')">
       Consulta seguro vehicular - soat
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnVehiculares"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnVehiculares"
       onclick="window.open('https://www.sat.gob.pe/VirtualSAT/modulos/Capturas.aspx?tri=C&mysession=', '_blank')">
       Consulta antecedente vehicular
       </button>
@@ -123,26 +123,26 @@
 <div id="lineas-telefonicas">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTAS DE LÍNEAS TELEFÓNICAS</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTAS DE LÍNEAS TELEFÓNICAS</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnTelefonica"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnTelefonica"
       onclick="window.open('https://www.osiptel.gob.pe/sistemas/sigem.html', '_blank')">
       Consulta teléfono móvil robado - OSIPTEL
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnTelefonica"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnTelefonica"
       onclick="window.open('https://aplicaciones.claro.com.pe/ClienteLineasWeb/', '_blank')">
       Consulta líneas - CLARO
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnTelefonica"
       onclick="window.open('https://portal.bitel.com.pe/asistencia/consulta-linea', '_blank')">
       Consulta líneas - BITEL
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnTelefonica"
       onclick="window.open('https://www.movistar.com.pe/movil/postpago/conoce-tus-numeros-moviles', '_blank')">
       Consulta líneas - MOVISTAR
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnTelefonica"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnTelefonica"
       onclick="window.open('https://www.entel.pe/consulta-en-linea/', '_blank')">
       Consulta líneas - ENTEL
       </button>
@@ -153,22 +153,22 @@
   <div id="nivel-educativo">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE NIVEL EDUCATIVO</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE NIVEL EDUCATIVO</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnEducativo"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnEducativo"
       onclick="window.open('https://enlinea.sunedu.gob.pe/', '_blank')">
       Consulta títulos profesionales - SUNEDU
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnEducativo"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnEducativo"
       onclick="window.open('https://titulosinstitutos.minedu.gob.pe/', '_blank')">
       Consulta títulos técnicos y pedagógicos - MINEDU
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnEducativo"
       onclick="window.open('https://titulos.dreayacucho.gob.pe/consulta', '_blank')">
       Consulta títulos pedagógicas - DREA (roto)
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnEducativo"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnEducativo"
       onclick="window.open('https://certificado.minedu.gob.pe/', '_blank')">
       Consulta certificados de estudios - MINEDU
       </button>
@@ -179,22 +179,22 @@
 <div id="seguros-salud">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE SEGUROS DE SALUD</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE SEGUROS DE SALUD</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnSalud"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnSalud"
       onclick="window.open('https://app1.susalud.gob.pe/registro/', '_blank')">
       Consulta seguro - SUSALUD
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnSalud"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnSalud"
       onclick="window.open('http://app.sis.gob.pe/SisConsultaEnLinea/Consulta/frmConsultaEnLinea.aspx', '_blank')">
       Consulta seguro integral - SIS
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnSalud"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnSalud"
       onclick="window.open('http://ww4.essalud.gob.pe:7777/acredita/', '_blank')">
       Consulta seguro integral - SIS
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnSalud"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnSalud"
       onclick="window.open('https://app-cbo.saludpol.gob.pe:22085/', '_blank')">
       Consulta seguro policial - SALUD POL
       </button>
@@ -205,18 +205,18 @@
 <div id="empresas-trabajo">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE EMPRESAS Y TRABAJO</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE EMPRESAS Y TRABAJO</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnEmpresa"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnEmpresa"
       onclick="window.open('https://aplicativosweb6.sunafil.gob.pe/si.verificacionPlanillaElectronica/timeout', '_blank')">
       Consulta planilla - sunafil
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnEmpresa"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnEmpresa"
       onclick="window.open('https://aplicativosweb2.sunafil.gob.pe/si.denunciasVirtuales/timeout', '_blank')">
       Denuncia virtual a empresas - sunafil
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnEmpresa"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnEmpresa"
       onclick="window.open('https://www.sunarp.gob.pe/dn-personas-juridicas.asp', '_blank')">
       Consulta personas jurídicas / empresas escritas - sunarp
       </button>
@@ -228,22 +228,22 @@
 <div id="propiedades">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE PROPIEDADES</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE PROPIEDADES</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnPropiedades"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPropiedades"
       onclick="window.open('https://georural.midagri.gob.pe/sicar/', '_blank')">
       Consulta identificación predial - CATASTRAL
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnPropiedades"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPropiedades"
       onclick="window.open('https://www.sunarp.gob.pe/Consultas/consPropiedad', '_blank')">
       Consulta propiedades - SUNARP
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPropiedades"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPropiedades"
       onclick="window.open('https://lr.cofopri.gob.pe/clin_clinea.asp', '_blank')">
       Consulta predial - COFOPRI
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPropiedades"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPropiedades"
       onclick="window.open('http://catastro.cofopri.gob.pe/geollaqta/', '_blank')">
       Obtención de código catastral - GEO LLAQTA
       </button>
@@ -254,30 +254,30 @@
 <div id="sistemas-busquedas">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE SISTEMAS DE BÚSQUEDAS</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE SISTEMAS DE BÚSQUEDAS</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnBusquedas"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnBusquedas"
       onclick="window.open('https://www.recompensas.pe/requisitoriados', '_blank')">
       Consulta programa de recompensa - MININTER
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnBusquedas"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnBusquedas"
       onclick="window.open('https://www.interpol.int/es/Como-trabajamos/Notificaciones/Notificaciones-rojas/Ver-las-notificaciones-rojas', '_blank')">
       Consulta programa de búsqueda - INTERPOL
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnBusquedas"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnBusquedas"
       onclick="window.open('https://portal.mpfn.gob.pe/seguimiento-de-denuncias', '_blank')">
       Consulta denuncias - MPFN
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnBusquedas"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnBusquedas"
       onclick="window.open('https://casillas.pj.gob.pe/redam/#/', '_blank')">
       Consulta registro de deudores alimentarios morosos - REDAM
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnBusquedas"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnBusquedas"
       onclick="window.open('https://www.sanciones.gob.pe/rnssc/#/transparencia/acceso', '_blank')">
       Consultar sanciones contra servidores civiles - RNSSC
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnBusquedas"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnBusquedas"
       onclick="window.open('https://desaparecidosenperu.policia.gob.pe/Desaparecidos/desaparecidos_menor_mujer_hombre', '_blank')">
       Consulta desaparecidos - MININTER
       </button>
@@ -288,22 +288,22 @@
 <div id="policia-nacional">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE POLICIA NACIONAL</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE POLICIA NACIONAL</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnPolicia"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPolicia"
       onclick="window.open('https://www.policia.gob.pe/', '_blank')">
       Plataforma de acceso - PNP
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnPolicia"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3btn btnPolicia"
       onclick="window.open('https://sistemas.policia.gob.pe/denuncias_digitales/denunciav.aspx', '_blank')">
       Sistema denuncia digital
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPolicia"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPolicia"
       onclick="window.open('https://sistemaspnp.com/index.php', '_blank')">
       Sistema de base data - RQ
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPolicia"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPolicia"
       onclick="window.open('https://www.mininter.gob.pe/ubica-tu-comisaria', '_blank')">
       Consulta geo ubicación de comisarias
       </button>
@@ -314,26 +314,26 @@
 <div id="pensiones">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE PENSIONES Y ESTADO FINANCIERO</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE PENSIONES Y ESTADO FINANCIERO</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnPensiones"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPensiones"
       onclick="window.open('https://servicios.sbs.gob.pe/ReporteSituacionPrevisional/Afil_Consulta.aspx', '_blank')">
       Consulta sistema de pensiones - AFP
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnPensiones"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPensiones"
       onclick="window.open('https://tuclavevirtual.onp.gob.pe/#/inicio', '_blank')">
       Consulta sistema de pensiones - ONP
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPensiones"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPensiones"
       onclick="window.open('https://servicios.sbs.gob.pe/serviciosenlinea/', '_blank')">
       Consulta reporte de deudas - SBS
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPensiones"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPensiones"
       onclick="window.open('https://www.sentinelperu.com/cliente/sentinel.aspx', '_blank')">
       Consulta historial crediticio - SENTINEL
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnPensiones"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnPensiones"
       onclick="window.open('https://soluciones.equifax.com.pe/e-commerce/registro/', '_blank')">
       Consulta deudas registradas - INFOCORP
       </button>
@@ -344,18 +344,18 @@
 <div id="migraciones">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA DE MIGRACIONES Y PASAPORTES</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA DE MIGRACIONES Y PASAPORTES</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnMigraciones"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnMigraciones"
       onclick="window.open('https://sel.migraciones.gob.pe/servmig-valreg/%28S%280afthcqekyncefhi5pd5m30s%29%29/VerificarPAS', '_blank')">
       Consulta migraciones
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnMigraciones"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnMigraciones"
       onclick="window.open('https://sel.migraciones.gob.pe/servmig-valreg/VerificarCE?AspxAutoDetectCookieSupport=1', '_blank')">
       Acceso al sistema de consultas de migraciones
       </button>
-      <button mat-flat-button  class="col-3 m-3 btn btnMigraciones"
+      <button mat-flat-button  class="col-12 md:col-3 m-1 md:m-3 btn btnMigraciones"
       onclick="window.open('https://apps.rree.gob.pe/portal/SCT/visasconsulta.nsf/Consulta.xsp', '_blank')">
       Consulta pasaporte - visa
       </button>
@@ -367,14 +367,14 @@
 <div id="politicas">
   <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
     <mat-card-header>
-      <mat-card-title class="mb-3" style="font-size: 24px; font-weight: 600 ;">CONSULTA POLÍTICA</mat-card-title>
+      <mat-card-title class="mb-3 text-base md:text-2xl font-semibold text-center">CONSULTA POLÍTICA</mat-card-title>
     </mat-card-header>
     <mat-card-content class="px-5 flex justify-content-around grid" style="width: 100%;">
-      <button mat-flat-button class="col-3 m-3 btn btnPolitica"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPolitica"
       onclick="window.open('https://sroppublico.jne.gob.pe/Consulta/Afiliado', '_blank')">
       Consulta afiliación política
       </button>
-      <button mat-flat-button class="col-3 m-3 btn btnPolitica"
+      <button mat-flat-button class="col-12 md:col-3 m-1 md:m-3 btn btnPolitica"
       onclick="window.open('https://sel.migraciones.gob.pe/servmig-valreg/VerificarCE?AspxAutoDetectCookieSupport=1', '_blank')">
       Consulta de organización y candidatos políticos
       </button>

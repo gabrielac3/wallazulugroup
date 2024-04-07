@@ -1,149 +1,50 @@
-<!-- <mat-sidenav-container>
-
-  <mat-sidenav-content>
-    <mat-toolbar>
-      <div class="w-5 pl-3">
-        <div [style.background-color]="currentImage == currentImageWallazullu ? 'transparent' : '#ffffff61'" [style.width]="currentImage == currentImageWallazullu ? 'auto' : 'fit-content'" >
-        <img [style.width.px]="currentImage == currentImageWallazullu ? 70 : 80" [src]="currentImage"
-          alt="" class = "mt-2">
-        </div>
-      </div>
-      <div class="flex flex-row w-7 justify-content-between pr-3">
-        <a mat-list-item routerLink="wallazulu"
-        routerLinkActive="active"
-        class="router-a">
-          <div style="display: inline-flex; align-items: center">
-            <p class="router-name">WALLA INTERNATIONAL</p>
-          </div>
-        </a>
-        <a mat-list-item routerLink="geitsu"
-        routerLinkActive="active"
-        class="router-a" >
-          <div style="display: inline-flex; align-items: center">
-            <p class="router-name">GEITSU</p>
-          </div>
-        </a>
-        <a mat-list-item routerLink="wallaosint"
-        routerLinkActive="active"
-        class="router-a">
-          <div style="display: inline-flex; align-items: center">
-            <p class="router-name">WALLAOSINT</p>
-          </div>
-        </a>
-        <a mat-list-item routerLink="contact" routerLinkActive="active" class="router-a">
-          <div style="display: inline-flex; align-items: center">
-            <p class="router-name">CONTACTANOS</p>
-          </div>
-        </a>
-      </div>
-
-    </mat-toolbar>
-    <router-outlet></router-outlet>
-    <footer style="font-size: 17px;"> -->
-      <!--       <div class="flex py-6 px-8">
-        <div class="pl-3 w-4 mt-4" style="text-align: center;">
-          <img width="15%" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/organization-iso-9000-iso-9001-2015-certification-iso-9001.png" alt="">
-          <img width="25%" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/ESCUDO-GLOBAL.png" alt="">
-        </div>
-        <div class="w-8 flex justify-content-evenly">
-          <ul style="list-style: none;color: #ffffff61; margin: 0">
-            <div class="mb-3" style="color: #ffffff;">
-              Get Started
-            </div>
-            <li class="mb-2">Tutorials</li>
-            <li class="mb-2">Resources</li>
-            <li class="mb-2">Guides</li>
-            <li class="mb-2">Examples</li>
-            <li class="mb-2">Docs</li>
-          </ul>
-          <ul style="list-style: none;color: #ffffff61; margin: 0">
-            <div class="mb-3" style="color: #ffffff;">
-              About
-            </div>
-            <li class="mb-2">Stories</li>
-            <li class="mb-2">Community</li>
-            <li class="mb-2">Blog</li>
-            <li class="mb-2">Careers</li>
-            <li class="mb-2">Brand Assets</li>
-          </ul>
-          <ul style="list-style: none;color: #ffffff61; margin: 0">
-            <div class="mb-3" style="color: #ffffff;">
-              Downloads
-            </div>
-            <li class="mb-2">Flex UI Kit</li>
-            <li class="mb-2">Modern UI Kit</li>
-            <li class="mb-2">Framer UI Kit</li>
-            <li class="mb-2">Gradients UI Kit</li>
-            <li class="mb-2">Black & White UI Kit</li>
-          </ul>
-        </div>
-      </div>
-      <mat-divider style="background-color: #ffffff61; width: 100%;"></mat-divider> --><!--
-      <div class="flex justify-content-between py-3 px-5">
-        <div style="color: #ffffff61; margin: 0">
-          ©All rights reserved
-        </div>
-        <div style="color: #ffffff61; margin: 0">
-          Walla Zulu Group
-        </div>
-      </div>
-    </footer>
-  </mat-sidenav-content>
-</mat-sidenav-container> -->
-
-
 <mat-sidenav-container>
 
   <mat-sidenav-content>
     <mat-toolbar>
-      <div class="w-5 pl-3">
-        <div [style.background-color]="currentImage == currentImageWallazullu ? 'transparent' : '#ffffff61'" [style.width]="currentImage == currentImageWallazullu ? 'auto' : 'fit-content'" >
-        <img [style.width.px]="currentImage == currentImageWallazullu ? 70 : 80" [src]="currentImage"
-          alt="" class = "mt-2">
+      <button mat-icon-button (click)="sidenav.toggle()" class="menu-icon" *ngIf="isMobile">
+        <mat-icon style="color: #ffffff;">menu</mat-icon>
+      </button>
+      <div class="w-4 pl-3" *ngIf="!isMobile">
+        <div [style.background-color]="currentImage == currentImageWallazullu ? 'transparent' : '#ffffff61'"
+          [style.width]="currentImage == currentImageWallazullu ? 'auto' : 'fit-content'">
+          <img [style.width.px]="currentImage == currentImageWallazullu ? 70 : 80" [src]="currentImage" alt=""
+            class="mt-2">
         </div>
       </div>
-      <div class="flex flex-row w-7 justify-content-between pr-3">
-        <a mat-list-item routerLink="wallazulu"
-        routerLinkActive="active"
-        class="router-a">
+      <div class="flex flex-row w-8 justify-content-between" *ngIf="!isMobile">
+        <a mat-list-item routerLink="wallazulu" routerLinkActive="active" class="router-a">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">INICIO</p>
           </div>
         </a>
-        <a mat-list-item routerLink="nosotros-wallazulu"
-        routerLinkActive="active"
-        class="router-a" >
+        <a mat-list-item routerLink="nosotros-wallazulu" routerLinkActive="active" class="router-a">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">NOSOTROS</p>
           </div>
         </a>
 
-        <a mat-list-item routerLink="geitsu"
-        routerLinkActive="active"
-        class="router-a" >
+        <a mat-list-item routerLink="geitsu" routerLinkActive="active" class="router-a">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">GEITSU</p>
           </div>
         </a>
 
-        <a mat-list-item
-        routerLinkActive="active" [matMenuTriggerFor]="menu"
-        class="router-a" >
+        <a mat-list-item routerLinkActive="active" [matMenuTriggerFor]="menu" class="router-a">
           <div style="display: inline-flex; align-items: center; cursor: pointer">
             <p class="router-name">WALLAOSINT</p>
-            <mat-icon
-            style="color: #ffffff; transform: scale(1.5); margin-bottom: 12px; margin-left: 7px;">
+            <mat-icon style="color: #ffffff; transform: scale(1.3); margin-bottom: 12px; margin-left: 3px;">
               arrow_drop_down
             </mat-icon>
           </div>
         </a>
 
-          <mat-menu #menu="matMenu" xPosition="after">
-            <button mat-menu-item style="width: 200px;" routerLink="wallaosint">
-              <span>Sobre WALLAOSINT </span>
-            </button>
-            <button mat-menu-item routerLink="consulta-datos">Consulta de Datos</button>
-          </mat-menu>
+        <mat-menu #menu="matMenu" xPosition="after">
+          <button mat-menu-item style="width: 200px;" routerLink="wallaosint">
+            <span>Sobre WALLAOSINT </span>
+          </button>
+          <button mat-menu-item routerLink="consulta-datos">Consulta de Datos</button>
+        </mat-menu>
 
         <a mat-list-item routerLink="contact" routerLinkActive="active" class="router-a">
           <div style="display: inline-flex; align-items: center">
@@ -194,7 +95,7 @@
         </div>
       </div>
       <mat-divider style="background-color: #ffffff61; width: 100%;"></mat-divider> -->
-      <div class="flex justify-content-between py-3 px-5">
+      <div class="flex justify-content-between py-3 px-1 md:px-5 text-sm md:text-base">
         <div style="color: #ffffff61; margin: 0">
           ©All rights reserved
         </div>
@@ -204,4 +105,73 @@
       </div>
     </footer>
   </mat-sidenav-content>
+  <mat-sidenav #sidenav mode="over" class="sidenav">
+    <mat-nav-list>
+      <div class="flex flex-column">
+        <a mat-list-item routerLink="wallazulu" routerLinkActive="active" class="router-b">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">INICIO</p>
+          </div>
+        </a>
+        <a mat-list-item routerLink="nosotros-wallazulu" routerLinkActive="active" class="router-b">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">NOSOTROS</p>
+          </div>
+        </a>
+
+        <a mat-list-item routerLink="geitsu" routerLinkActive="active" class="router-b">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">GEITSU</p>
+          </div>
+        </a>
+
+        <div class="flex align-items-center" (click)="showMenu()">
+          <p class="router-name" style="padding-left: 16px;">WALLAOSINT </p>
+          <mat-icon style="color: #ffffff; transform: scale(1.5); margin-bottom: 12px; margin-left: 7px;">
+            arrow_drop_down
+          </mat-icon>
+        </div>
+
+        <div *ngIf="isHandset" class="pl-3">
+
+          <a mat-list-item routerLink="wallaosint" routerLinkActive="active" class="router-b">
+            <div style="display: inline-flex; align-items: center">
+              <p class="router-name">Sobre WALLAOSINT</p>
+            </div>
+          </a>
+
+          <a mat-list-item routerLink="consulta-datos" routerLinkActive="active" class="router-b">
+            <div style="display: inline-flex; align-items: center">
+              <p class="router-name">Consulta de Datos</p>
+            </div>
+          </a>
+        </div>
+
+        <!--         <a mat-list-item
+        routerLinkActive="active" [matMenuTriggerFor]="menu"
+        class="router-b" >
+          <div style="display: inline-flex; align-items: center; cursor: pointer">
+            <p class="router-name">WALLAOSINT</p>
+            <mat-icon
+            style="color: #ffffff; transform: scale(1.5); margin-bottom: 12px; margin-left: 7px;">
+              arrow_drop_down
+            </mat-icon>
+          </div>
+        </a>
+
+          <mat-menu #menu="matMenu" xPosition="after">
+            <button mat-menu-item style="width: 200px;" routerLink="wallaosint">
+              <span>Sobre WALLAOSINT </span>
+            </button>
+            <button mat-menu-item routerLink="consulta-datos">Consulta de Datos</button>
+          </mat-menu> -->
+
+        <a mat-list-item routerLink="contact" routerLinkActive="active" class="router-b">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">CONTACTANOS</p>
+          </div>
+        </a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
 </mat-sidenav-container>

@@ -21,11 +21,45 @@ mat-card{
   height: 130px;
   background-color: #E0E2DB;
   width: 30%;
+  font-size: 17px;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
 }
+
+mat-icon{
+  transform: scale(0.6);
+  margin-bottom: -5px;
+}
+
+@media (max-width: 768px) {
+
+  .cardGeitsu{
+    height: 70px;
+    width: 90%;
+    font-size: 11px;
+    line-height: 1.2em;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  mat-icon{
+    transform: scale(0.5);
+    margin-bottom: -7px;
+  }
+
+  .card4{
+    width: 90%;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+}
+
 
 
 

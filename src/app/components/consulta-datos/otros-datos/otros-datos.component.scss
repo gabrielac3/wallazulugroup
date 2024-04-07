@@ -90,3 +90,20 @@ mat-card{
   background-color: #69140E !important;
   color: #ffffff !important;
 }
+
+@media (max-width: 768px) {
+
+  .card4{
+    width: 90%;
+    margin: 5px;
+    height: 70px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+}

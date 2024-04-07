@@ -1,13 +1,13 @@
 <div>
 
   <mat-card class="m-4 p-3 flex flex-row">
-    <div class="m-3 w-3 flex p-3"
+    <div class="m-3 w-3 flex p-3" *ngIf="!isMobile"
     style="background-color: #1C2A45; color: #ffffff; font-size: 34px; display: flex;
     justify-content: center; align-items: center; text-align: center; line-height:2em;border-radius: 10px; ">
     ¿Quienes Somos?</div>
-    <div class="flex flex-column w-9">
-    <div class="m-5 px-5"
-      style="text-align: justify; font-size: 17px; line-height:1.5em;">
+    <div class="flex flex-column w-12 md:w-9">
+    <div class="md:m-5 px-1 md:px-5 text-base md:text-lg line-height-2 md:line-height-3"
+      style="text-align: justify;">
       Somos una compañía de seguridad privada de seguridad global, en ruta a ser homologada con certificaciones
       internacionales de la ISO: 18788: 2015 estándar para la gestión de operaciones de seguridad en empresas privadas,
       y siguiendo lineamientos internacionales para calidad, continuidad de negocio, salud ocupacional, control y
@@ -21,17 +21,17 @@
 
   </mat-card>
 
-  <div class="flex m-4">
-    <mat-card class="mr-2 w-6" style="height: 350px">
+  <div class="flex flex-column md:flex-row m-4">
+    <mat-card class="md:mr-2 w-12 md:w-6" style="height: 350px">
       <img mat-card-image style="height: 100%; object-fit:cover; "
         src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallazulluIA11.jpg" alt="">
     </mat-card>
 
-    <mat-card class="ml-2 p-5 w-6 flex align-items-center justify-content-center">
+    <mat-card class="md:ml-2 md:p-5 w-12 md:w-6 flex align-items-center justify-content-center">
       <mat-card-header>
-        <mat-card-title class="mb-2" style="font-size: 20px; font-weight: 600 ;">VISIÓN</mat-card-title>
+        <mat-card-title class="mb-2 text-base md:text-xl font-semibold">VISIÓN</mat-card-title>
       </mat-card-header>
-      <mat-card-content style="text-align: justify;font-size: 17px; line-height:1.5em;" class="px-5">
+      <mat-card-content style="text-align: justify;" class="md:px-5 text-sm md:text-lg line-height-2 md:line-height-3">
         “Somos una corporación enfocada hacia el mundo del servicio de la seguridad global y tecnológico, de estar
         siempre en vanguardia con respeto de los derechos humanos, de las innovaciones tecnológicas y de controles
         medioambientales. Entregar nuestros recursos disponibles, de manera oportuna y eficaz, para satisfacer las
@@ -43,13 +43,13 @@
 
 
 
-  <div class="flex m-4">
+  <div class="flex flex-column md:flex-row m-4">
 
-    <mat-card class="mr-2 p-5 w-6 flex align-items-center justify-content-center">
+    <mat-card class="md:mr-2 md:p-5 w-12 md:w-6 flex align-items-center justify-content-center">
       <mat-card-header>
-        <mat-card-title class="mb-2" style="font-size: 20px; font-weight: 600 ;">MISIÓN</mat-card-title>
+        <mat-card-title class="mb-2 text-base md:text-xl font-semibold">MISIÓN</mat-card-title>
       </mat-card-header>
-      <mat-card-content style="text-align: justify;font-size: 17px; line-height:1.5em;" class="px-5">
+      <mat-card-content style="text-align: justify;" class="md:px-5 text-sm md:text-lg line-height-2 md:line-height-3">
         “Somos una corporación enfocada hacia el mundo del servicio de la seguridad global y tecnológico, de estar
         siempre en vanguardia con respeto de los derechos humanos, de las innovaciones tecnológicas y de controles
         medioambientales. Entregar nuestros recursos disponibles, de manera oportuna y eficaz, para satisfacer las
@@ -58,7 +58,7 @@
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="ml-2 w-6" style="height: 350px">
+    <mat-card class="md:ml-2 w-12 md:w-6" style="height: 350px">
       <img mat-card-image style="height: 100%; object-fit:cover; "
         src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallazulluIA3.jpg" alt="">
     </mat-card>
@@ -66,17 +66,17 @@
 
 <mat-card class="m-4 p-3">
   <div class="flex flex-column align-items-center">
-    <h1 class="m-3" style="font-size: 21px; font-weight: 600 ;">VALORES</h1>
+    <h1 class="m-3 text-base md:text-xl font-semibold">VALORES</h1>
 
     <div class="col-12 grid justify-content-center">
-      <mat-card class="col-3 m-4 p-3 valor">Ética y honestidad.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Interés por los talentos humanos.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Valor e integridad profesional – personal.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Confianza y compromiso con los resultados.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Responsabilidad social.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Sostenibilidad.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Confidencialidad.</mat-card>
-      <mat-card class="col-3 m-4 p-3 valor">Resiliencia y prospectividad.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Ética y honestidad.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Interés por los talentos humanos.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Valor e integridad profesional – personal.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Confianza y compromiso con los resultados.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Responsabilidad social.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Sostenibilidad.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Confidencialidad.</mat-card>
+      <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Resiliencia y prospectividad.</mat-card>
     </div>
   </div>
 
@@ -85,10 +85,10 @@
 
   <mat-card class="m-4 p-3 align-items-center">
     <mat-card-header class="m-2">
-      <mat-card-title class="mb-2" style="color:#E19621; font-size: 28px; ">NUESTRO MOTTO: OBSERVACION - DETERMINACION -
+      <mat-card-title class="mb-2 text-xl md:text-2xl font-semibold" style="color:#E19621; text-align: center; ">NUESTRO MOTTO: OBSERVACION - DETERMINACION -
         MITIGACION</mat-card-title>
     </mat-card-header>
-    <mat-card-content style="text-align: center; font-size: 20px; line-height:1.5em;" class="px-5">
+    <mat-card-content style="text-align: center;" class="px-5 text-base md:text-xl line-height-2 md:line-height-3">
       “Siempre nuestros talentos operan con observación profesional para determinar soluciones que mitiguen el riesgo,
       los peligros, proveyendo en una continuidad de negocio a través del servicio con resiliencia y prospectividad.”
     </mat-card-content>

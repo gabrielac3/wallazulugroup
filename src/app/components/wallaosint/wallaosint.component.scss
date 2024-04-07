@@ -54,6 +54,8 @@ mat-card{
   display: none;
   background-color: #1C2A45;
   transform: rotateY(180deg);
+  font-size: 17px;
+  line-height:1.3em;
 }
 
 .card3:hover .front {
@@ -64,3 +66,43 @@ mat-card{
   display: block;
 }
 
+.imgWallaosint{
+  height: 300px;
+  object-fit:cover;
+}
+
+.imgCamino{
+  height: 545px;
+  object-fit:cover;
+}
+
+@media (max-width: 768px) {
+  .imgWallaosint{
+    height: 200px;
+  }
+
+  .card3{
+    width: 90%;
+    font-size: 12px;
+    padding: 10px;
+    height: 150px;
+  }
+
+  .back {
+    font-size: 12px;
+    line-height:1.2em;
+  }
+
+  .imgCamino{
+    height: 200px;
+  }
+
+  .card4{
+    width: 90%;
+    margin: 5px;
+    height: 70px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+}

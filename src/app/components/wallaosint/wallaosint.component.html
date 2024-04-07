@@ -1,9 +1,9 @@
 <div>
-  <h1 class="mt-4 p-4" style="color:#1C2A45; font-size: 48px; text-align: center; font-weight: 700;">
+  <h1 class="mt-4 pt-4 text-2xl md:text-6xl font-semibold text-center" style="color:#1C2A45;">
     WALLAOSINT
   </h1>
 
-  <h3 style="color:#E19621; font-size: 32px; text-align: center; font-weight: 700; line-height:1.5em;">
+  <h3 class="mt-4 p-1 md:p-4 text-lg md:text-4xl font-semibold text-center line-height-2 md:line-height-3" style="color:#E19621;">
     WALLA OPEN SOURCE SYSTEM INTELLIGENCE
   </h3>
   <mat-card class="m-4">
@@ -12,13 +12,13 @@
   </mat-card>
 
   <mat-card class="m-4 p-3 flex flex-row">
-    <div class="m-3 w-3 flex p-3"
+    <div class="m-3 w-3 flex p-3" *ngIf="!isMobile"
     style="background-color: #E19621; color: #ffffff; font-size: 34px; display: flex;
     justify-content: center; align-items: center; text-align: center; line-height:2em;border-radius: 10px; ">
     ¿Quienes Somos?</div>
-    <div class="flex flex-column w-9">
-    <div class="m-5 px-5"
-      style="text-align: justify; font-size: 17px; line-height:1.5em;">
+    <div class="flex flex-column w-12 md:w-9">
+      <div class="md:m-5 px-1 md:px-5 text-sm md:text-lg line-height-2 md:line-height-3"
+        style="text-align: justify;">
         Somos una organización, parte de la estructura de Organización Corporativa de Walla Zulú Group – Walla International , que, está centrada en la
         sociedad a través del manejo de las informaciones abiertas consolidadas en su aplicación en el internet, que
         permita el acceso de manera controlada por el sistema y evaluar medidas de Inteligencia y Contrainteligencia que
@@ -28,13 +28,13 @@
   </div>
   </mat-card>
 
-  <div class="flex justify-content-center" style="width: 100%;">
+  <div class="flex flex-column md:flex-row justify-content-center" style="width: 100%;">
 
-  <mat-card class="w-6 m-4">
-    <img mat-card-image style="height: 300px; object-fit:cover; "
+  <mat-card class="w-10 md:w-6 m-4">
+    <img mat-card-image class="imgWallaosint"
     src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallazulluIA15.jpg" alt="">
 
-    <mat-card-content class="mt-3" style=" font-size: 17px; line-height:1.5em;">
+    <mat-card-content class="mt-3 text-sm md:text-lg line-height-2 md:line-height-3">
       <strong> WALLAOSINT</strong> es en parte APP de consultoría, en parte laboratorio y en parte grupo de expertos.
       Desarrollamos soluciones prácticas para amenazas de seguridad actuales y emergentes; por esos medios, ayudamos
       al sector público, al sector privado y a la sociedad civil a promover de manera efectiva la seguridad pública,
@@ -42,11 +42,11 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="w-6 m-4">
-    <img mat-card-image style="height: 300px; object-fit:cover; "
+  <mat-card class="w-10 md:w-6 m-4">
+    <img mat-card-image class="imgWallaosint"
     src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallaonsintIA2.jpg" alt="">
 
-    <mat-card-content class="mt-3" style="text-align: justify; font-size: 17px; line-height:1.5em;">
+    <mat-card-content class="mt-3 text-sm md:text-lg line-height-2 md:line-height-3">
       <strong> WALLAOSINT</strong> se dedica a proporcionar experiencia relevante y actualizada en materia de
       seguridad e inteligencia en todos los niveles: nacional, regional e internacional. Estamos orgullosos,
       apasionados y comprometidos de garantizar los derechos fundamentales y los intereses comunes a través de las
@@ -59,16 +59,16 @@
 </div>
 
 
-  <div class="flex m-4">
-    <mat-card class="mr-2 w-6">
+  <div class="flex flex-column md:flex-row m-4">
+    <mat-card class="md:mr-2 w-12 md:w-6">
       <img mat-card-image style="height: 100%; object-fit:cover;" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallazulluIA.jpg" alt="">
     </mat-card>
 
-    <mat-card class="ml-2 p-5 w-6 flex align-items-center justify-content-center">
+    <mat-card class="md:ml-2 md:p-5 w-12 md:w-6 flex align-items-center justify-content-center">
       <mat-card-header>
-        <mat-card-title class="mb-2" style="font-size: 21px; font-weight: 600 ;">NUESTRA MISIÓN</mat-card-title>
+        <mat-card-title class="md:mb-2 text-base md:text-xl font-semibold">NUESTRA MISIÓN</mat-card-title>
       </mat-card-header>
-      <mat-card-content style="text-align: justify; font-size: 17px; line-height:1.5em;" class="px-5">
+      <mat-card-content style="text-align: justify;" class="md:px-5 text-sm md:text-lg line-height-2 md:line-height-3">
         Nuestra misión es fortalecer la seguridad privada, contribuir en la pública y promover la cooperación nacional,
         regional e internacional en el sector privado, público y en la sociedad civil, con un fuerte sentido de respeto
         por los derechos humanos, el derecho de la información y la democracia. Al hacerlo, nuestro objetivo es fomentar
@@ -82,13 +82,13 @@
     </mat-card>
   </div>
 
-  <div class="flex m-4">
+  <div class="flex flex-column md:flex-row m-4">
 
-    <mat-card class="mr-2 p-5 w-6 flex align-items-center justify-content-center">
+    <mat-card class="md:mr-2 md:p-5 w-12 md:w-6 flex align-items-center justify-content-center">
       <mat-card-header>
-        <mat-card-title class="mb-2" style="font-size: 21px; font-weight: 600 ;">NUESTRA VISIÓN</mat-card-title>
+        <mat-card-title class="md:mb-2 text-base md:text-xl font-semibold">NUESTRA VISIÓN</mat-card-title>
       </mat-card-header>
-      <mat-card-content style="text-align: justify; font-size: 17px; line-height:1.5em;" class="px-5">
+      <mat-card-content style="text-align: justify;" class="md:px-5 text-sm md:text-lg line-height-2 md:line-height-3">
         Ser una plataforma App que lidere la organización de soporte de información, asesoría, trasvase de información
         abierta en la comunidad OSINT.
         <br><br>
@@ -103,7 +103,7 @@
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="ml-2 w-6">
+    <mat-card class="md:mr-2 w-12 md:w-6">
       <img mat-card-image style="height: 100%; object-fit:cover;" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallazulluIA12.jpg" alt="">
     </mat-card>
 
@@ -112,38 +112,38 @@
 
     <mat-card class="m-4 p-5 flex align-items-center justify-content-center">
       <mat-card-header>
-        <mat-card-title class="mb-2" style="font-size: 21px; font-weight: 600 ;">NUESTROS VALORES</mat-card-title>
+        <mat-card-title class="mb-2 text-base md:text-xl font-semibold">NUESTROS VALORES</mat-card-title>
       </mat-card-header>
 
-    <div class="flex justify-content-around m-4" style="width: 100%;">
+    <div class="flex flex-column md:flex-row justify-content-around m-4" style="width: 100%;">
       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;"
       (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
         <div class="front">Excelencia</div>
-        <div class="back" style=" font-size: 17px; line-height:1.3em;">
+        <div class="back">
           El más alto nivel posible de desempeño y servicio, con sentido del deber y honor.
         </div>
       </mat-card>
       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;"
       (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
         <div class="front">Sostenibilidad</div>
-        <div class="back" style=" font-size: 17px; line-height:1.3em;">
+        <div class="back">
           Un equilibrio entre ley, orden y justicia.
         </div>
       </mat-card>
       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;"
       (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
         <div class="front">Integridad</div>
-        <div class="back" style=" font-size: 17px; line-height:1.3em;">
+        <div class="back">
           Independiente, ética y legal.
         </div>
       </mat-card>
     </div>
 
-    <div class="flex justify-content-around m-4" style="width: 100%;">
+    <div class="flex flex-column md:flex-row justify-content-around m-4" style="width: 100%;">
       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;"
       (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
         <div class="front">Educación</div>
-        <div class="back p-2" style=" font-size: 17px; line-height:1.3em;">
+        <div class="back p-2">
           Una organización de aprendizaje que evoluciona y educa con discusiones, debates y
         toma de decisiones informados.
         </div>
@@ -151,7 +151,7 @@
       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;"
       (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
         <div class="front">Resiliencia</div>
-        <div class="back p-2" style=" font-size: 17px; line-height:1.3em;">
+        <div class="back p-2">
           Una organización corporativa que, con la fuerza profesional y el carácter
           resiliente de sus integrantes, forje la institución con resultados que, satisfagan a los clientes y promuevan
           fuertemente un Espíritu Resiliente Empresarial.
@@ -160,7 +160,7 @@
       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;"
       (mouseenter)="flipCard($event)" (mouseleave)="flipCard($event)">
         <div class="front">Trabajo en equipo</div>
-        <div class="back p-2" style=" font-size: 17px; line-height:1.3em;">
+        <div class="back p-2">
           Unimos fuerzas y construimos relaciones con el sector público, el sector
         privado y con nuestros socios dada nuestra visión compartida en seguridad, misión y valores.
         </div>
@@ -170,16 +170,16 @@
 </mat-card>
 
 
-  <div class="flex m-4">
-    <mat-card class="mr-2 w-6">
-      <img mat-card-image style="height: 545px; object-fit:cover;" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallaonsintIA5.jpg" alt="">
+  <div class="flex flex-column md:flex-row m-4">
+    <mat-card class="md:mr-2 w-12 md:w-6">
+      <img mat-card-image class="imgCamino" src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/wallaonsintIA5.jpg" alt="">
     </mat-card>
 
-    <mat-card class="ml-2 p-5 w-6 flex align-items-center justify-content-center">
+    <mat-card class="md:ml-2 md:p-5 w-12 md:w-6 flex align-items-center justify-content-center">
       <mat-card-header>
-        <mat-card-title class="mb-2" style="color:#E19621;font-size: 21px; font-weight: 600 ;">EN EL CAMINO HACIA LA SEGURIDAD GLOBAL</mat-card-title>
+        <mat-card-title class="mb-2 text-base md:text-xl font-semibold line-height-2 md:line-height-3 text-center" style="color:#E19621;">EN EL CAMINO HACIA LA SEGURIDAD GLOBAL</mat-card-title>
       </mat-card-header>
-      <mat-card-content style="text-align: justify; font-size: 17px; line-height:1.5em;" class="px-5">
+      <mat-card-content style="text-align: justify;" class="md:px-5 text-sm md:text-lg line-height-2 md:line-height-3">
         La seguridad humana y la delincuencia transnacional, debido a las migraciones forzadas por fenómenos políticos,
         conflictos internos y / o externos, han surgido y evolucionado como preocupaciones predominantes de las partes
         interesadas en los sectores público y privado.
@@ -195,7 +195,7 @@
 
   <mat-card class="m-4">
     <div class="flex flex-column">
-      <div class="flex justify-content-around m-4">
+      <div class="flex flex-column md:flex-row justify-content-around m-4">
         <mat-card class="card4">
           REQUISITOS
         </mat-card>
@@ -206,7 +206,7 @@
           ADQUISICION
         </mat-card>
       </div>
-      <div class="flex justify-content-around m-4">
+      <div class="flex flex-column md:flex-row justify-content-around m-4">
         <mat-card class="card4">
           PROCESAMIENTO
         </mat-card>
