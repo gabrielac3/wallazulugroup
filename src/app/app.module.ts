@@ -15,6 +15,7 @@ import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallaz
 import { ConsultaDatosComponent } from './components/consulta-datos/consulta-datos.component';
 import { DatosNacionalesComponent } from './components/consulta-datos/datos-nacionales/datos-nacionales.component';
 import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otros-datos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otr
 
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
 
     MaterialModule
   ],

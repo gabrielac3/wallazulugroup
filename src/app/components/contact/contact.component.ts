@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,6 @@ export class ContactComponent {
     lastname: [null, [Validators.required]],
     email: [null, [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
     phone: [null, [Validators.required, Validators.pattern("^[0-9]+$")]],
-    codofin: [null],
     address: [null],
     message: [null, [Validators.required]],
   })
@@ -24,6 +24,7 @@ export class ContactComponent {
 
   constructor(
     private fb: FormBuilder,
+    private emailService: EmailService,
 ) { }
 
 ngOnInit() {
@@ -45,7 +46,30 @@ ngOnInit() {
 }
 
   submitContact(form: any) {
-    console.log(form);
+
+    if (this.contactForm.invalid) {
+      return
+    }
+
+    console.log(form.value);
+
+    const dataMail = {
+      nombre: form.value.name,
+      correo: form.value.email,
+    }
+
+    this.emailService.sendMail(dataMail)
+    .subscribe({
+      next: (data) => {
+        console.log(data);
+
+      },
+      error: (error) => {
+        console.log(error);
+
+      }
+    });
+
 
     this.contactForm.reset();
 
