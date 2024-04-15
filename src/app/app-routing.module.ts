@@ -5,7 +5,7 @@ import { WallazuluComponent } from './components/wallazulu/wallazulu.component';
 import { WallaosintComponent } from './components/wallaosint/wallaosint.component';
 import { GeitsuComponent } from './components/geitsu/geitsu.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallazulu.component';
+import { NosotrosWallazuluComponent } from './components/nosotros-wallazulu/nosotros-wallazulu.component';
 import { ConsultaDatosComponent } from './components/consulta-datos/consulta-datos.component';
 import { DatosNacionalesComponent } from './components/consulta-datos/datos-nacionales/datos-nacionales.component';
 import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otros-datos.component';

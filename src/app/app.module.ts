@@ -11,11 +11,13 @@ import { GeitsuComponent } from './components/geitsu/geitsu.component';
 import { WallaosintComponent } from './components/wallaosint/wallaosint.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NosotrosWallazuluComponent } from './nosotros-wallazulu/nosotros-wallazulu.component';
+import { NosotrosWallazuluComponent } from './components/nosotros-wallazulu/nosotros-wallazulu.component';
 import { ConsultaDatosComponent } from './components/consulta-datos/consulta-datos.component';
 import { DatosNacionalesComponent } from './components/consulta-datos/datos-nacionales/datos-nacionales.component';
 import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otros-datos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SuccessDialogComponent } from './shared/success-dialog/success-dialog.component';
+import { ErrorDialogComponent } from './shared/error-dialog/error-dialog.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
     NosotrosWallazuluComponent,
     ConsultaDatosComponent,
     DatosNacionalesComponent,
-    OtrosDatosComponent
+    OtrosDatosComponent,
+    SuccessDialogComponent,
+    ErrorDialogComponent
   ],
   imports: [
     BrowserModule,

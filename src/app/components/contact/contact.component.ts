@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { EmailService } from 'src/app/services/email.service';
+import { ErrorDialogComponent } from 'src/app/shared/error-dialog/error-dialog.component';
+import { SuccessDialogComponent } from 'src/app/shared/success-dialog/success-dialog.component';
 
 @Component({
   selector: 'app-contact',
@@ -25,6 +28,7 @@ export class ContactComponent {
   constructor(
     private fb: FormBuilder,
     private emailService: EmailService,
+    public dialog: MatDialog,
 ) { }
 
 ngOnInit() {
@@ -51,28 +55,38 @@ ngOnInit() {
       return
     }
 
-    console.log(form.value);
-
-    const dataMail = {
-      nombre: form.value.name,
-      correo: form.value.email,
-    }
-
-    this.emailService.sendMail(dataMail)
+    this.emailService.sendMail(form.value)
     .subscribe({
       next: (data) => {
-        console.log(data);
+        this.openInfoDialog('0ms', '0ms', `${data.message}`);
 
       },
       error: (error) => {
         console.log(error);
-
+        this.openErrorDialog('0ms', '0ms', error.error.error);
       }
     });
-
 
     this.contactForm.reset();
 
   }
+
+  openErrorDialog(enterAnimationDuration: string, exitAnimationDuration: string, informacion: any): void {
+    this.dialog.open(ErrorDialogComponent, {
+        width: '400px',
+        enterAnimationDuration,
+        exitAnimationDuration,
+        data: informacion,
+    });
+}
+
+openInfoDialog(enterAnimationDuration: string, exitAnimationDuration: string, informacion: any): void {
+    this.dialog.open(SuccessDialogComponent, {
+        width: '400px',
+        enterAnimationDuration,
+        exitAnimationDuration,
+        data: informacion,
+    })
+}
 
 }
