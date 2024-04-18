@@ -6,11 +6,11 @@
         <mat-icon style="color: #ffffff;">menu</mat-icon>
       </button>
       <div class="w-4 pl-3" *ngIf="!isMobile">
-        <div [style.background-color]="currentImage == currentImageWallazullu ? 'transparent' : '#ffffff61'"
-          [style.width]="currentImage == currentImageWallazullu ? 'auto' : 'fit-content'">
-          <img [style.width.px]="currentImage == currentImageWallazullu ? 70 : 80" [src]="currentImage" alt=""
+<!--         <div [style.background-color]="currentImage == currentImageWallazullu ? 'transparent' : '#ffffff61'"
+          [style.width]="currentImage == currentImageWallazullu ? 'auto' : 'fit-content'"> -->
+          <img [style.width.px]="currentImage == currentImageWallazullu ? 70 : 70" [src]="currentImage" alt=""
             class="mt-2">
-        </div>
+<!--         </div> -->
       </div>
       <div class="flex flex-row w-8 justify-content-between" *ngIf="!isMobile">
         <a mat-list-item routerLink="wallazulu" routerLinkActive="active" class="router-a">
@@ -21,6 +21,12 @@
         <a mat-list-item routerLink="nosotros-wallazulu" routerLinkActive="active" class="router-a">
           <div style="display: inline-flex; align-items: center">
             <p class="router-name">NOSOTROS</p>
+          </div>
+        </a>
+
+        <a mat-list-item routerLink="security-tech" routerLinkActive="active" class="router-a">
+          <div style="display: inline-flex; align-items: center">
+            <p class="router-name">SECURITY & TECH</p>
           </div>
         </a>
 
@@ -97,7 +103,7 @@
       <mat-divider style="background-color: #ffffff61; width: 100%;"></mat-divider> -->
       <div class="flex justify-content-between py-3 px-1 md:px-5 text-sm md:text-base">
         <div style="color: #ffffff61; margin: 0">
-          ©All rights reserved
+          ©copyright: Walla Zulú International Group SAC
         </div>
         <div style="color: #ffffff61; margin: 0">
           Walla Zulu Group

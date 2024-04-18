@@ -9,6 +9,7 @@ import { NosotrosWallazuluComponent } from './components/nosotros-wallazulu/noso
 import { ConsultaDatosComponent } from './components/consulta-datos/consulta-datos.component';
 import { DatosNacionalesComponent } from './components/consulta-datos/datos-nacionales/datos-nacionales.component';
 import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otros-datos.component';
+import { SecurityTechComponent } from './components/security-tech/security-tech.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: 'consulta-datos/nacionales', component: DatosNacionalesComponent },
       { path: 'consulta-datos/otros', component: OtrosDatosComponent },
       { path: 'geitsu', component: GeitsuComponent },
+      { path: 'security-tech', component: SecurityTechComponent },
       { path: 'contact', component: ContactComponent},
     ],
   },

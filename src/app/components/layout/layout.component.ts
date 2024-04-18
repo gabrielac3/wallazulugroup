@@ -16,9 +16,10 @@ export class LayoutComponent implements OnInit {
 
   sidenavMovil: boolean = false;
 
-  currentImageWallazullu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/ESCUDO-GLOBAL2.png';
-  currentImageGeitsu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/GEITSU2.png';
-  currentImageWallaosint: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLAOSINT2.png';
+  currentImageWallazullu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLA_OFICIAL2.png';
+  currentImageGeitsu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/GEITSU_BLANCO2.png';
+  currentImageWallaosint: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLAOSINT_BLANCO2.png';
+  currentImageSecurity: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/SECURITY_BLANCO2.png';
   currentImage!: string;
 
   constructor(private router: Router) {}
@@ -62,6 +63,9 @@ export class LayoutComponent implements OnInit {
         break;
       case '/home/wallaosint':
         this.currentImage = this.currentImageWallaosint;
+        break;
+      case '/home/security-tech':
+        this.currentImage = this.currentImageSecurity;
         break;
       default:
         this.currentImage = this.currentImageWallazullu;

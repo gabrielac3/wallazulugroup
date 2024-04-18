@@ -18,6 +18,7 @@ import { OtrosDatosComponent } from './components/consulta-datos/otros-datos/otr
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessDialogComponent } from './shared/success-dialog/success-dialog.component';
 import { ErrorDialogComponent } from './shared/error-dialog/error-dialog.component';
+import { SecurityTechComponent } from './components/security-tech/security-tech.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ErrorDialogComponent } from './shared/error-dialog/error-dialog.compone
     DatosNacionalesComponent,
     OtrosDatosComponent,
     SuccessDialogComponent,
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    SecurityTechComponent
   ],
   imports: [
     BrowserModule,

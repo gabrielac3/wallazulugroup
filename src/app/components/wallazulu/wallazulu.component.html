@@ -8,7 +8,7 @@
   <mat-card class="m-4 p-3">
     <div class="flex flex-column align-items-center mt-3" style="text-align: center;">
       <h1 class="text-2xl md:text-5xl font-semibold">WALLA ZULU GROUP – WALLA INTERNATIONAL</h1>
-      <h2 class="text-xl md:text-4xl ">“SECURITY GLOBAL & TECHNOLOGIES”</h2>
+      <h2 class="text-xl md:text-4xl ">“Grupo de Entrenamiento e Instrucción Táctico Especial y de Seguridad Urbana”</h2>
     </div>
   </mat-card>
 
@@ -91,22 +91,32 @@
     <mat-card class="card4">CYBER SECURITY & TECHNOLOGIES</mat-card>
   </div>
 
-  <mat-card class="m-4 p-3">
+  <mat-card class="m-4 p-4">
 
     <div class="flex justify-content-center align-items-center m-4" class="text-2xl md:text-4xl font-semibold"
-      style="text-align: center;">VISITAR SERVICIOS</div>
+      style="text-align: center;">ÁREAS EMPRESARIALES DE WALLA INTERNATIONAL</div>
 
-    <div class="flex flex-column md:flex-row md:justify-content-around m-4">
+    <div class="flex flex-column md:flex-row md:justify-content-around mx-4 mt-5">
+
+
+      <mat-card mat-button class="p-5 flex flex-column align-items-center btnGeitsu" style="background-color: #1C2A45;"
+      (click)="goToSecurity()">
+      <img mat-card-image class="btnShield"
+        src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/SECURITY_BLANCO2.png" alt="">
+      <mat-card-content class="mt-4 text-base md:text-xl security">SECURITY & TECH</mat-card-content>
+      </mat-card>
+
       <mat-card mat-button class="p-3 md:p-5 flex flex-column align-items-center btnGeitsu"
         style="background-color: #636a7f;" (click)="goToGeitsu()">
         <img mat-card-image class="btnShield"
-          src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/GEITSU2.png" alt="">
+          src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/GEITSU_BLANCO2.png" alt="">
         <mat-card-content class="mt-2 md:mt-4">GEITSU</mat-card-content>
       </mat-card>
+
       <mat-card mat-button class="p-5 flex flex-column align-items-center btnGeitsu" style="background-color: #E19621;"
         (click)="goToWallaosint()">
         <img mat-card-image class="btnShield"
-          src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLAOSINT2.png" alt="">
+          src="https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLAOSINT_BLANCO2.png" alt="">
         <mat-card-content class="mt-4">WALLAOSINT</mat-card-content>
       </mat-card>
 

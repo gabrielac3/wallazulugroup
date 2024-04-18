@@ -25,6 +25,10 @@ export class WallazuluComponent {
     window.location.href = '/home/wallaosint';
   }
 
+  goToSecurity() {
+    window.location.href = '/home/security-tech';
+  }
+
 
 
 }
