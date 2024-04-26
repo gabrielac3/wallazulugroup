@@ -43,26 +43,103 @@
     </mat-card>
   </div>
 
-  <mat-card class="m-4 p-3">
-    <div class="flex flex-column align-items-center">
-      <h1 class="m-3 text-base md:text-xl font-semibold">VALORES</h1>
+  <mat-card class="m-4 p-5 flex align-items-center justify-content-center line-height-2 ">
+    <mat-card-header>
+      <mat-card-title class="mb-2 text-base md:text-xl font-semibold">NUESTROS VALORES</mat-card-title>
+    </mat-card-header>
 
-      <div class="col-12 grid justify-content-center">
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Ética y honestidad.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Interés por los talentos humanos.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Valor e integridad profesional –
-          personal.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Confianza y compromiso con los
-          resultados.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Responsabilidad social.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Sostenibilidad.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Confidencialidad.</mat-card>
-        <mat-card class="col-12 md:col-3 m-2 md:m-4 p-2 md:p-3 valor">Resiliencia y prospectividad.</mat-card>
-      </div>
+    <div class="flex flex-column md:flex-row justify-content-around m-4" style="width: 100%;">
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Ética y honestidad</div>
+        <div class="back">
+          Conducta y Moral siempre en línea de lo correcto, siempre veraces, sinceros y justos.
+        </div>
+      </mat-card>
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Interés por los talentos humanos</div>
+        <div class="back">
+          Valoramos las capacidades únicas, tanto de la corporación como de los demás, para desarrollar y lograr
+          objetivos comunes y personales.
+        </div>
+      </mat-card>
+      <!--       <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Valor e integridad profesional – personal</div>
+        <div class="back">
+          Buscamos mantener los valores para actuar de manera justa honesta y responsable e incluido profesionalmente
+          con nuestros stakeholders, así se construirá relaciones sólidas, manteniendo la confianza entre todos y por
+          ende nuestra, su confianza que mantenga los objetivos y una eficiente continuidad de negocio.
+        </div>
+      </mat-card> -->
     </div>
 
-  </mat-card>
+    <div class="flex flex-column md:flex-row justify-content-around m-4" style="width: 100%;">
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front p-3">Valor e integridad profesional – personal</div>
+        <div class="back">
+          Buscamos mantener los valores para actuar de manera justa honesta y responsable e incluido profesionalmente
+          con nuestros stakeholders, así se construirá relaciones sólidas, manteniendo la confianza entre todos y por
+          ende nuestra, su confianza que mantenga los objetivos y una eficiente continuidad de negocio.
+        </div>
+      </mat-card>
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Confianza y compromiso con los resultados</div>
+        <div class="back p-2">
+          tenemos la confianza y el compromiso con los resultados que, valores que d3ebn de construirse para demostrar
+          nuestra dedicación y responsabilidad, y son fundamentales para construir el éxito de nuestra misión en el
+          mercado.
+        </div>
+      </mat-card>
+    </div>
+    <div class="flex flex-column md:flex-row justify-content-around m-4" style="width: 100%;">
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Responsabilidad social</div>
+        <div class="back p-2">
+          El compromiso que tendremos los talentos, la empresa y los stakeholders para actuar de manera ética y
+          contribuir al bienestar de la sociedad. Implica tomar conciencia, e ir más allá del cumplimiento de leyes y
+          regulaciones y generar impacto positivo.
+        </div>
+      </mat-card>
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Sostenibilidad</div>
+        <div class="back p-2">
+          Mantendremos la capacidad de satisfacer las necesidades del presente sin comprometer la capacidad de las
+          futuras generaciones, equilibrando o promoviendo el equilibrio de desarrollo económico (equitativo, resiliente
+          y respetuoso), social (buscando la equidad y justicia social) y ambiental (utilizaremos o interactuaremos con
+          la naturaleza de manera responsable y respeto la biodiversidad).
+        </div>
+      </mat-card>
+    </div>
 
+
+    <div class="flex flex-column md:flex-row justify-content-around m-4" style="width: 100%;">
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Confidencialidad</div>
+        <div class="back p-2">
+          Promovemos la protección y el respeto de la información privada y sensible de una persona (talentos) o entidad
+          (stakeholders), Respetamos la confidencialidad porque vigilamos, controlamos los accesos o dinámicas de la
+          información acorde a las leyes y estándares internacionales.
+        </div>
+      </mat-card>
+      <mat-card class="card3" style=" background-color: #636a7f; color: #ffffff;" (mouseenter)="flipCard($event)"
+        (mouseleave)="flipCard($event)">
+        <div class="front">Resiliencia y prospectividad</div>
+        <div class="back p-2">
+          Mostraremos las capacidades de adaptarnos a las situaciones en el ambiente de trabajo, manteniendo el
+          equilibrio emocional y mental frente a esa adversidad. Mostraremos la capacidad de enfrentar los desafíos y
+          aprender de ellas de manera positiva, desarrollando habilidades de resolución de problemas de manera
+          prospectiva ( con una actitud positiva y creativa).
+        </div>
+      </mat-card>
+    </div>
+  </mat-card>
 
   <mat-card class="m-4 p-3 align-items-center">
     <mat-card-header class="m-2">

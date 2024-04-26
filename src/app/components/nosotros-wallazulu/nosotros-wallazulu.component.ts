@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-nosotros-wallazulu',
   templateUrl: './nosotros-wallazulu.component.html',
-  styleUrls: ['./nosotros-wallazulu.component.scss']
+  styleUrls: ['./nosotros-wallazulu.component.scss'],
 })
 export class NosotrosWallazuluComponent {
   isMobile: boolean = false;
@@ -11,7 +11,6 @@ export class NosotrosWallazuluComponent {
   isLaptop: boolean = false;
 
   ngOnInit() {
-
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
 
@@ -28,5 +27,8 @@ export class NosotrosWallazuluComponent {
     }
   }
 
-
+  flipCard(event: MouseEvent): void {
+    const card = event.currentTarget as HTMLElement;
+    card.classList.toggle('flipped');
+  }
 }

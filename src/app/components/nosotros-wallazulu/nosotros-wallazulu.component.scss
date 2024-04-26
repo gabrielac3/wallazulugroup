@@ -1,8 +1,8 @@
-mat-card{
+mat-card {
   border-radius: 10px;
 }
 
-.valor{
+.valor {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,10 +12,64 @@ mat-card{
   font-size: 17px;
 }
 
-@media (max-width: 768px) {
+.card3 {
+  width: 40%;
+  margin: 5px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  transition: transform 1s;
+}
 
-  .valor{
+.card3:hover {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+}
+
+.front {
+  display: block;
+}
+
+.back {
+  display: none;
+  background-color: #1c2a45;
+  transform: rotateY(180deg);
+  font-size: 17px;
+  line-height: 1.3em;
+}
+
+.card3:hover .front {
+  display: none;
+}
+
+.card3:hover .back {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .valor {
     height: 50px;
     font-size: 12px;
+  }
+  .card3 {
+    width: 90%;
+    font-size: 12px;
+    padding: 10px;
+    height: 150px;
+  }
+
+  .back {
+    font-size: 12px;
+    line-height: 1.2em;
   }
 }
