@@ -16,10 +16,15 @@ export class LayoutComponent implements OnInit {
 
   sidenavMovil: boolean = false;
 
-  currentImageWallazullu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/LOGO_WALLA_VECTORIZADO_SIN_ESTRELLA.png';
+/*   currentImageWallazullu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/LOGO_WALLA_VECTORIZADO_SIN_ESTRELLA.png';
   currentImageGeitsu: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/GEITSU_BLANCO2.png';
   currentImageWallaosint: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/WALLAOSINT_BLANCO2.png';
-  currentImageSecurity: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/SECURITY_BLANCO2.png';
+  currentImageSecurity: string = 'https://raw.githubusercontent.com/gabrielac3/im-genes/main/wallazulu/SECURITY_BLANCO2.png'; */
+
+  currentImageWallazullu: string = '../../../assets/LOGO_WALLA_VECTORIZADO_SIN_ESTRELLA.png';
+  currentImageGeitsu: string = '../../../assets/GEITSU_BLANCO2.png';
+  currentImageWallaosint: string = '../../../assets/WALLAOSINT_BLANCO2.png';
+  currentImageSecurity: string = '../../../assets/SECURITY_BLANCO2.png';
   currentImage!: string;
 
   constructor(private router: Router) {}
