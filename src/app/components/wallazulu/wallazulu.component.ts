@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatCarousel, MatCarouselComponent } from 'ng-mat-carousel';
 
 @Component({
   selector: 'app-wallazulu',

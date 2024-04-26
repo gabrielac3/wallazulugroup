@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SuccessDialogComponent } from './shared/success-dialog/success-dialog.component';
 import { ErrorDialogComponent } from './shared/error-dialog/error-dialog.component';
 import { SecurityTechComponent } from './components/security-tech/security-tech.component';
+import { MatCarouselModule } from 'ng-mat-carousel';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { SecurityTechComponent } from './components/security-tech/security-tech.
     ReactiveFormsModule,
     HttpClientModule,
 
-    MaterialModule
+    MaterialModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
