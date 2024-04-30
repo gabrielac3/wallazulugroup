@@ -1,9 +1,8 @@
-
-mat-card{
+mat-card {
   border-radius: 10px;
 }
 
-.card4{
+.card4 {
   width: 24%;
   margin: 5px;
   height: 150px;
@@ -18,11 +17,11 @@ mat-card{
 }
 
 .card4:hover {
-  background-color: #E0E2DB;
+  background-color: #e0e2db;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card3{
+.card3 {
   width: 24%;
   margin: 5px;
   height: 300px;
@@ -37,12 +36,12 @@ mat-card{
   transition: transform 1s;
 }
 
-
 .card3:hover {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
 }
 
@@ -63,31 +62,30 @@ mat-card{
   display: block;
 }
 
-.imgCard3{
+.imgCard3 {
   width: 80%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-.cardContent{
+.cardContent {
   display: flex;
   flex-direction: row;
 }
 
-.btnGeitsu{
+.btnGeitsu {
   color: #ffffff;
   font-size: 30px;
-  cursor:pointer;
+  cursor: pointer;
   width: 300px;
 }
 
-.btnShield{
+.btnShield {
   height: 200px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-
-  .card3{
+  .card3 {
     width: 100%;
     margin: 3px;
     height: 150px;
@@ -102,18 +100,18 @@ mat-card{
     transition: transform 1s;
   }
 
-  .imgCard3{
+  .imgCard3 {
     width: 50%;
-    object-fit:cover;
+    object-fit: cover;
   }
 
-  .cardContent{
+  .cardContent {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .card4{
+  .card4 {
     width: 100%;
     margin: 5px;
     height: 100px;
@@ -127,24 +125,21 @@ mat-card{
     transition: background-color 0.3s, box-shadow 0.3s;
   }
 
-  .btnGeitsu{
+  .btnGeitsu {
     background-color: #636a7f;
     color: #ffffff;
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
     width: 200px;
     margin-bottom: 10px;
   }
 
-  .btnShield{
+  .btnShield {
     height: 100px;
-    object-fit:cover;
+    object-fit: cover;
   }
 
-  .security{
+  .security {
     padding: 0px;
   }
-
-  
-
 }
